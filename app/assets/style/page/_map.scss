@@ -1,0 +1,32 @@
+.sitemap{
+  margin-bottom: 304px;
+  @include pad(){
+    margin-bottom: 104px;
+  }
+  @include mobile(){
+    margin-bottom: 56px;
+  }
+}
+.locationDetail{
+  width: 40%;
+  margin-bottom: 32px;
+  border: 1px solid #00000020;
+  @include pad(){
+    width: 100%;
+    .locationDetailContent{
+      margin-left: 30px;
+    }
+    .cardImg{
+      width: 47.82%;
+    }
+  }
+  @include mobile(){
+    margin-bottom: 16px;
+    .locationDetailContent{
+      margin-left: 0;
+    }
+    .cardImg{
+      width: 100%;
+    }
+  }
+}

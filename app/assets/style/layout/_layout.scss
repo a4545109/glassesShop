@@ -1,0 +1,199 @@
+body{
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+}
+.container{
+  max-width: 1110px;
+  margin: 0 auto;
+  @include pad(){
+    max-width: 690px;
+  }
+  @include mobile(){
+    max-width: 345px;
+  }
+}
+
+/* header */
+.header{
+  padding: 30px 88px;
+  .logo{
+    background-image: url("../../images/logo.png");
+    width: 80px;
+    height: 48px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space:nowrap;
+  }
+  .navbar-item{
+    margin-left: 64px;
+    a{
+      color: #fff;
+    }
+  }
+  @include pad(){
+    padding: 30px 39px;
+    .navbar-item{
+      margin-left: 40px;
+    }
+  }
+  @include mobile(){
+    padding: 0px 0px;
+    align-items: stretch;
+    .logo{
+      margin: 10px auto;
+      width: 48px;
+      height: 29px;
+    }
+    .navbar-item{
+      text-align: center;
+      width: 50%;
+      margin-left: 0px;
+      padding: 8px 0px;
+      border: 1px solid #fff;
+    }
+  }
+}
+/* header end*/
+
+/* footer */
+.footer{
+  position: relative;
+  a{
+    color: #fff;
+  }
+  .footerText{
+    padding: 48px 0 22px 0;
+  }
+  .footerNav-item{
+    margin-right: 48px;
+  }
+  @include pad(){
+    .footerText{
+      padding: 40px 0 24px 0px;
+    }
+    .footerNav{
+      margin-bottom: 26px;
+    }
+    .footerNav-item{
+      margin-right: 40px;
+    }
+  }
+  @include mobile(){
+    .footerText{
+      padding: 24px 0px;
+    }
+    .footerNav{
+      display: none;
+    }
+  }
+//contact
+  .tel{
+    margin-bottom: 19px;
+  } 
+  .telImg{
+    width: 44px;
+    margin-right: 17px;
+  }
+  .mailImg{
+    width: 48px;
+    margin-right: 12px;
+  }
+  @include pad(){
+    .contact{
+      line-height: 26px;
+    }
+    .tel{
+      margin-bottom: 8px;
+    } 
+    .telImg{
+      width: 24px;
+      margin-right: 12px;
+    }
+    .mailImg{
+      width: 32px;
+      margin-right: 8px;
+    }
+  }
+  @include mobile(){
+    .telImg{
+      width: 20px;
+      margin-right: 4px;
+    }
+    .mailImg{
+      width: 20px;
+      margin-right: 5px;
+    }
+  }
+// fas
+  .fas{
+    padding-top: 36px;
+  } 
+  .fasImg{
+    width: 48px;
+  }
+  .fas-item{
+    margin-left: 32px;
+  }
+  @include pad(){
+    .fas{
+      padding-top: 40px;
+    }
+    .fas-item{
+      margin-left: 24px;
+    }
+    .fasImg{
+      width: 24px;
+    }
+  }
+
+  // copyright
+  .copyright{
+    padding: 24px 0 28px 0;
+  }
+  .copyrightLogo{
+    margin-right: 38px;
+  }
+  @include pad(){
+    .policy{
+      margin-right: 24px;
+    }
+    .copyright{
+      padding: 24px 0 40px 0;
+    }
+    .copyrightLogo{
+      display: none;
+    }
+  }
+  @include mobile(){
+    .copyright{
+      padding: 18px 0 25px 0;
+      align-items: flex-start;
+    }
+    .copyrightText{
+      margin-bottom: 7px;
+    }
+  }
+  .terms{
+    font-size: 14px;
+  }
+  .policy{
+    margin-right: 62px;
+  }
+  .bottomLogo{
+    position: absolute;
+    right: 15px;
+    bottom: 21px;
+    display: none;
+  }
+  @include mobile(){
+    .bottomLogo{
+      display: block;
+      width: 46px;
+    }
+    .policy{
+      display: block;
+    }
+  }
+}
+// footer end
+

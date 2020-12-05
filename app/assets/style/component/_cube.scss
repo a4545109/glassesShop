@@ -1,0 +1,16 @@
+.brown{
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #5F3E2D;
+  margin-right: 8px;
+  @include mobile(){
+    margin-right: 4px;
+  }
+}
+.lightBrown{
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #B75929;  
+}

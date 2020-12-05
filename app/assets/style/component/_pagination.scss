@@ -1,0 +1,40 @@
+// pagination
+.pagination{
+  margin-bottom: 156px;
+  @include pad(){
+    margin-bottom: 104px;
+  }
+  @include mobile(){
+    margin-bottom: 56px;
+  }
+  .direction{
+    font-size: 19px;
+    line-height: 26px;
+    a{
+      display: block;
+      padding: 10px 12px 12px 12px;
+    }
+    @include mobile(){
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
+  .pageNumber{
+    font-size: 18px;
+    line-height: 24px;
+    a{
+      display: block;
+      padding: 10px 17px 14px 14px;
+    }
+    @include mobile(){
+      font-size: 11px;
+      line-height: 15px;
+    }
+  }
+  li{
+    border:1px solid #555555;
+  }
+  a{
+    color: #555555;
+  }
+}

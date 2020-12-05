@@ -1,0 +1,29 @@
+.blog-nav{
+  padding: 15px 0;
+  .blog-nav-item{
+    margin-right: 48px;
+    font-size: 20px;
+    line-height: 28px;
+    a{
+      color: #fff;
+    }
+  }
+  @include pad(){
+    .blog-nav-item{
+      margin-right: 32px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  @include mobile(){
+    .blog-nav-item{
+      margin-right: 24px;
+    }
+    .blog-nav-item:nth-child(4){
+      margin-right: 0px;
+    }
+    .blog-nav-img{
+      display: none;
+    }
+  }
+}
