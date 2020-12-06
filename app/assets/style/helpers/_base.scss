@@ -1,0 +1,87 @@
+// 標籤行高
+h2{
+	line-height: 90px;
+	@include pad(){
+		line-height: 67px;
+	}
+}
+h3{
+  line-height: 67px;
+  @include pad(){
+		line-height: 45px;
+  }
+}
+h4{
+	line-height: 45px;
+}
+h5{
+	line-height: 36px;
+}
+h6{
+	line-height: 30px;
+}
+p{
+	line-height: 30px;
+}
+//100%
+.h-100{
+  height: 100%;
+}
+.w-100{
+  width: 100%;
+}
+// 水平線
+.horizontalLine{
+  height: 1px;
+  background-color: #fff;
+}
+.horizontalLineLight{
+  height: 1px;
+  background-color: #00000021;
+}
+// 斜體
+.f-italic{
+  font-style: italic;
+}
+// 粗體
+.f-bold{
+  font-weight: bold;
+}
+// 文字置中
+.text-center{
+  text-align: center;
+}
+// 字體
+.text-white{
+  color: #fff;
+}
+.text-primary-heavy{
+  color: #650300;
+}
+.text-primary{
+  color: #AA0601;
+}
+.text-secondary{
+  color: #707070;
+}
+.text-secondary-light{
+  color: #6C6C6C;
+}
+// 背景色
+.bg-primary{
+  background-color: #AA0601;
+}
+.bg-primary-heavy{
+  background-color: #650300;
+}
+.bg-light{
+  background-color: #AA06010D;
+}
+.bg-black{
+  background-color: #000;
+}
+.bg-cover{
+  background-position: center center;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
