@@ -6,8 +6,12 @@
 .blog{
   padding: 82px 0 156px 0;
   .blogImg{
+    object-fit:cover;
     max-width: 57.2%;    
     margin-right: 30px;
+  }
+  .blogTitle{
+    line-height: 45px;
   }
   .blogSubtitle{
     line-height: 26px;
@@ -23,6 +27,7 @@
     line-height: 21px;
   }
   .blogTextMore{
+    color: #555555;
     display: none;
   }
   .more{
@@ -30,7 +35,7 @@
     right: 0;
     bottom: 0;
   }
-  @include pad(){
+  @include medium(){
     padding: 40px 0 104px 0;
     .blogImg{
       max-width: 47.82%;    
@@ -56,7 +61,7 @@
       display: none;
     }
   }
-  @include mobile(){
+  @include pad(){
     padding: 24px 0 56px 0;
     .blogs{
       margin-bottom: 13px;

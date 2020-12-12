@@ -9,7 +9,7 @@
     width: 29%;
     padding: 10px 19px;
   }
-  @include pad(){
+  @include medium(){
     .select-title{
       font-size: 16px;
       line-height: 20px;
@@ -22,7 +22,7 @@
       padding: 8px 16px;
     }
   }
-  @include  mobile(){
+  @include  pad(){
     .select-title{
       line-height: 20px;
       margin-right: 12px;

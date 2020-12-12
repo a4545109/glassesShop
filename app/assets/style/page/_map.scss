@@ -1,9 +1,9 @@
 .sitemap{
   margin-bottom: 304px;
-  @include pad(){
+  @include medium(){
     margin-bottom: 104px;
   }
-  @include mobile(){
+  @include pad(){
     margin-bottom: 56px;
   }
 }
@@ -11,16 +11,22 @@
   width: 40%;
   margin-bottom: 32px;
   border: 1px solid #00000020;
-  @include pad(){
+  .cardImg{
+    height: 224px;
+    overflow: hidden;
+    object-fit:cover;
+  }
+  @include medium(){
     width: 100%;
     .locationDetailContent{
       margin-left: 30px;
     }
     .cardImg{
+      height: 164px;
       width: 47.82%;
     }
   }
-  @include mobile(){
+  @include pad(){
     margin-bottom: 16px;
     .locationDetailContent{
       margin-left: 0;
@@ -28,5 +34,12 @@
     .cardImg{
       width: 100%;
     }
+  }
+}
+.map{
+  width: 47.5vw; 
+  height: 31vw;
+  @include medium(){
+    width: 100%;
   }
 }

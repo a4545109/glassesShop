@@ -4,7 +4,7 @@
   border-radius: 4px;
   background-color: #5F3E2D;
   margin-right: 8px;
-  @include mobile(){
+  @include pad(){
     margin-right: 4px;
   }
 }

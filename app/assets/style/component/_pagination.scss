@@ -1,11 +1,14 @@
 // pagination
 .pagination{
   margin-bottom: 156px;
-  @include pad(){
+  @include medium(){
     margin-bottom: 104px;
   }
-  @include mobile(){
+  @include pad(){
     margin-bottom: 56px;
+  }
+  a:hover{
+    background-color: rgba(204, 200, 200, 0.425);
   }
   .direction{
     font-size: 19px;
@@ -14,7 +17,7 @@
       display: block;
       padding: 10px 12px 12px 12px;
     }
-    @include mobile(){
+    @include pad(){
       font-size: 12px;
       line-height: 17px;
     }
@@ -26,12 +29,13 @@
       display: block;
       padding: 10px 17px 14px 14px;
     }
-    @include mobile(){
+    @include pad(){
       font-size: 11px;
       line-height: 15px;
     }
   }
   li{
+    margin-left: -1px;
     border:1px solid #555555;
   }
   a{

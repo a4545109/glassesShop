@@ -1,15 +1,15 @@
 // banner
 .banner{
   height: 840px;
-  background-image:url("../../images/banner.png");  
-  @include mobile(){
+  background-image:url("../images/banner.png");  
+  @include pad(){
     height: 394px;
   }
   .bannerSubtitle{
     text-align: end;
     line-height: 50px;
   }
-  @include mobile(){
+  @include pad(){
     .bannerSubtitle{
       line-height: 22px;
     }
@@ -30,7 +30,7 @@
   .infoImg{
     margin: 0px auto 40px auto;
   }
-  @include pad(){
+  @include medium(){
     padding: 40px 0 80px 0;
     .infoItem{
       width: 34.34%;
@@ -42,7 +42,7 @@
       margin: 0px auto 40px auto;
     }
   }
-  @include mobile(){
+  @include pad(){
     padding: 32px 0 52px 0;
     .infoTitle{
       line-height: 33px;
@@ -76,7 +76,7 @@
     margin-right: 30px;
   }
   
-  @include pad(){
+  @include medium(){
     .seriesImg{
       margin-left: 0;
     }
@@ -87,7 +87,7 @@
       line-height: 37px;
     }
   }
-  @include mobile(){
+  @include pad(){
     .seriesTitle{
       line-height: 45px;
     }
@@ -117,7 +117,7 @@
 // wall
 .wall{
   padding: 64px 0 80px 0;
-  background-image: url("../../images/bg.png");
+  background-image: url("../images/bg.png");
   .wallItem{
     line-height: 95px;
     width: 50%;
@@ -139,13 +139,13 @@
     background: #fff;
     opacity: 50%;
   }
-  @include pad(){
+  @include medium(){
     padding: 40px 0 40px 0;
     .wallTitle{
       line-height: 45px;
     }
   }
-  @include mobile(){
+  @include pad(){
     padding: 32px 0 32px 0;
     .wallTitle{
       line-height: 28px;
@@ -173,7 +173,7 @@
   .customerText{
     margin-bottom: 10px;
   }
-  @include pad(){
+  @include medium(){
     .customerTitle{
       line-height: 45px;
     }
@@ -181,7 +181,7 @@
       width: 47.8%;
     }
   }
-  @include mobile(){
+  @include pad(){
     .indexCustomerTitle{
       line-height: 28px;
     }
@@ -224,7 +224,7 @@
   .agreeGroup{
     margin-bottom: 42px;
   }
-  @include pad(){
+  @include medium(){
     .contactUsTitle{
       line-height: 45px;
     }
@@ -244,7 +244,7 @@
       margin-bottom: 20px;
     }
   }
-  @include mobile(){
+  @include pad(){
     .contactContent{
       padding: 32px 0;
     }

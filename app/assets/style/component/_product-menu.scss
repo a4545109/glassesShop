@@ -2,7 +2,9 @@
   font-size: 42px;
   line-height: 55px;
   .product-menu-item{
-    width: 460px;
+    width: 33.33%;
+    flex-grow: 1;
+    flex-shrink: 0;
     border-left: 1px solid #DCDCDC;
     border-right: 1px solid #DCDCDC;
   }
@@ -17,12 +19,9 @@
   a:hover{
     border-bottom: 16px solid #AA0601;
   }
-  @include pad(){
+  @include medium(){
     font-size: 28px;
     line-height: 37px;
-    .product-menu-item{
-      width: 256px;
-    }
     .product-menu-img{
       width: 32px;
     }
@@ -37,7 +36,7 @@
       border-bottom: 8px solid #AA0601;
     }
   }
-  @include mobile(){
+  @include pad(){
     font-size: 14px;
     line-height: 19px;
     .product-menu-img{
@@ -57,15 +56,9 @@
 }
 .glassImg,
 .peopleImg{
-  width: 50%;
+  width: 49%;
   height: 309px;
-  @include mobile(){
-    height: 144px;
-  }
-}
-.glassImg{
-  margin-right: 30px;
   @include pad(){
-    margin-right: 0;
+    height: 144px;
   }
 }

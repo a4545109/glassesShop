@@ -1,10 +1,20 @@
+@mixin medium {
+  @media screen and (max-width:992px) {
+      @content;
+  }
+}
 @mixin pad {
   @media screen and (max-width:768px) {
-      @content
+      @content;
+  }
+}
+@mixin smallPad {
+  @media screen and (max-width:576px) {
+      @content;
   }
 }
 @mixin mobile {
   @media screen and (max-width:375px) {
-      @content
+      @content;
   }
 }

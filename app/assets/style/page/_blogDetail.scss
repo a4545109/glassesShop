@@ -2,10 +2,10 @@
 .breadcrumb{
   line-height: 22px;
   margin-bottom: 17px;
-  @include pad(){
+  @include medium(){
     margin-bottom: 8px;
   }
-  @include mobile(){
+  @include pad(){
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 6px;
@@ -17,13 +17,13 @@
   .tagText{
     margin-right: 16px;
   }
-  @include pad(){
+  @include medium(){
     line-height: 21px;
     .tagText{
       margin-right: 8px;
     }
   }
-  @include mobile(){
+  @include pad(){
     font-size: 14px;
     line-height: 19px;
     .tagText{
@@ -60,7 +60,7 @@
   .shareItem{
     margin-right: 19px;
   }
-  @include pad(){
+  @include medium(){
     width: 73.91%;
     .detailContent{
       margin-bottom: 27px;
@@ -85,7 +85,7 @@
       margin-right: 16px;
     }
   }
-  @include mobile(){
+  @include pad(){
     width: 100%;
     .detailContent{
       margin-bottom: 31px;
@@ -113,10 +113,10 @@
   .changeImg{
     width: 24px;
   }
-  @include pad(){
+  @include medium(){
     margin-bottom: 104px;
   }
-  @include mobile(){
+  @include pad(){
     margin-bottom: 39px;
     .changeItem:nth-child(2) .changeImg{
       margin-left: 0px;
@@ -124,13 +124,21 @@
     }
   }
 }
+
+.tagsTitle{
+  line-height: 37px;
+  margin-bottom: 5px;
+  @include medium(){
+    line-height: 26px;
+    margin-bottom: 6px;
+}
+  @include pad(){
+    margin-bottom: 10px;
+  }
+}
 // tags
 .tags{
   padding-left: 31px;
-  .tagsTitle{
-    line-height: 37px;
-    margin-bottom: 5px;
-  }
   a{
     display: inline;
     color: #AA0601;
@@ -139,13 +147,9 @@
   .padTags{
     display: none;
   }
-  @include pad(){
+  @include medium(){
     a{
       margin-right: 16px;
-    }
-    .tagsTitle{
-      line-height: 26px;
-      margin-bottom: 6px;
     }
     .pcTags{
       font-size: 16px;
@@ -159,14 +163,11 @@
         display: block;
       }
   }
-  @include mobile(){
+  @include pad(){
     padding-left: 0px;
     margin-bottom: 56px;
     a{
       margin-right: 8px;
-    }
-    .tagsTitle{
-      margin-bottom: 10px;
     }
     .pcTags{
       display: none;

@@ -152,8 +152,8 @@
 .justify-content-end{
   justify-content: flex-end
 }
-// pad版 
-@include pad(){
+// 992px~768px
+@include medium(){
   //大小
   .fs-md-4{
     font-size: 16px;
@@ -231,8 +231,8 @@
     flex-direction: row;
   }
 }
-//手機板
-@include mobile(){
+// 767px 以下
+@include pad(){
   //大小
   .fs-sm-4{
     font-size: 16px;

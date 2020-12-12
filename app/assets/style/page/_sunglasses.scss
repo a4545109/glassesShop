@@ -1,71 +1,65 @@
-.product-sun{
+.product{
   padding-top: 88px;
-  .sun-title{
-    font-size: 42px;
-    line-height: 63px;
-  }
-  .sun-item{
-    margin-bottom: 112px;
-  }
-  .sun-img{
+  .product-item-img{
     min-width: 100%;
     height: 224px;
+    object-fit:cover;
   }
-  .sun-content{
+  .product-content{
     font-size: 18px;
   }
-  .sun-item-title{
+  .product-item-title{
     margin-bottom: 8px;
   }
-  .sun-item-subtitle{
+  .product-item-subtitle{
     margin-bottom: 11px;
   }
-  @include pad(){
+  @include medium(){
     padding-top: 40px;
-    .sun-title{
+    .product-title{
       font-size: 32px;
       line-height: 43px;
     }
-    .sun-item{
+    .product-item{
       margin-bottom: 72px;
     }
-    .sun-subtitle{
+    .product-subtitle{
       line-height: 33px;
     }
-    .sun-content{
+    .product-content{
       font-size: 24px;
       line-height: 32px;
     }
-    .sun-item-title{
+    .product-item-title{
       margin-bottom: 0px;
     }
-    .sun-item-subtitle{
+    .product-item-subtitle{
       margin-bottom: 0px;
     }
   }
-  @include mobile(){
+  @include pad(){
     padding-top: 30px;
-    .sun-title{
+    .product-title{
       font-size: 20px;
       line-height: 26px;
     }
-    .sun-item{
+    .product-item{
       margin-bottom: 32px;
     }
-    .sun-subtitle{
+    .product-subtitle{
       line-height: 22px;
     }
-    .sun-content{
+    .product-content{
       font-size: 16px;
       line-height: 21px;
     }
   }
-  .sun-item{
+  .product-item{
     width: 31.53%;
-    @include pad(){
+    @include medium(){
       width: 47.82%;
     }
-    @include mobile(){
+    @include pad(){
       width: 100%;
     }
   }

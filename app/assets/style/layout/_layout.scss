@@ -4,10 +4,13 @@ body{
 .container{
   max-width: 1110px;
   margin: 0 auto;
-  @include pad(){
+  @include medium(){
+    max-width: 860px;
+  }
+  @include medium(){
     max-width: 690px;
   }
-  @include mobile(){
+  @include pad(){
     max-width: 345px;
   }
 }
@@ -16,7 +19,7 @@ body{
 .header{
   padding: 30px 88px;
   .logo{
-    background-image: url("../../images/logo.png");
+    background-image: url("../images/logo.png");
     width: 80px;
     height: 48px;
     display: block;
@@ -25,18 +28,19 @@ body{
     white-space:nowrap;
   }
   .navbar-item{
-    margin-left: 64px;
     a{
+      display: block;
+      padding: 0 32px;
       color: #fff;
     }
-  }
-  @include pad(){
-    padding: 30px 39px;
-    .navbar-item{
-      margin-left: 40px;
+    @include medium(){
+      padding: 0 20px;
     }
   }
-  @include mobile(){
+  @include medium(){
+    padding: 30px 39px;
+  }
+  @include pad(){
     padding: 0px 0px;
     align-items: stretch;
     .logo{
@@ -61,14 +65,14 @@ body{
   a{
     color: #fff;
   }
-  .footerText{
-    padding: 48px 0 22px 0;
+  .footerContent{
+    padding: 48px 0 20px 0;
   }
   .footerNav-item{
     margin-right: 48px;
   }
-  @include pad(){
-    .footerText{
+  @include medium(){
+    .footerContent{
       padding: 40px 0 24px 0px;
     }
     .footerNav{
@@ -78,8 +82,8 @@ body{
       margin-right: 40px;
     }
   }
-  @include mobile(){
-    .footerText{
+  @include pad(){
+    .footerContent{
       padding: 24px 0px;
     }
     .footerNav{
@@ -95,10 +99,10 @@ body{
     margin-right: 17px;
   }
   .mailImg{
-    width: 48px;
+    width: 44px;
     margin-right: 12px;
   }
-  @include pad(){
+  @include medium(){
     .contact{
       line-height: 26px;
     }
@@ -110,11 +114,11 @@ body{
       margin-right: 12px;
     }
     .mailImg{
-      width: 32px;
+      width: 24px;
       margin-right: 8px;
     }
   }
-  @include mobile(){
+  @include pad(){
     .telImg{
       width: 20px;
       margin-right: 4px;
@@ -125,19 +129,13 @@ body{
     }
   }
 // fas
-  .fas{
-    padding-top: 36px;
-  } 
   .fasImg{
     width: 48px;
   }
   .fas-item{
     margin-left: 32px;
   }
-  @include pad(){
-    .fas{
-      padding-top: 40px;
-    }
+  @include medium(){
     .fas-item{
       margin-left: 24px;
     }
@@ -153,7 +151,7 @@ body{
   .copyrightLogo{
     margin-right: 38px;
   }
-  @include pad(){
+  @include medium(){
     .policy{
       margin-right: 24px;
     }
@@ -164,7 +162,7 @@ body{
       display: none;
     }
   }
-  @include mobile(){
+  @include pad(){
     .copyright{
       padding: 18px 0 25px 0;
       align-items: flex-start;
@@ -185,7 +183,7 @@ body{
     bottom: 21px;
     display: none;
   }
-  @include mobile(){
+  @include pad(){
     .bottomLogo{
       display: block;
       width: 46px;
