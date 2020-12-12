@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>地圖</title>
-  <link rel="stylesheet" href="./assets/style/css/all.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
@@ -45,7 +45,9 @@
       <div class="d-flex justify-content-between flex-md-column">
         <div class="locationDetail">
           <div class="card d-md-flex flex-sm-column">
-            <img class="cardImg" src="./assets/images/locate1.jpeg" alt="">
+            <div class="cardImg">
+              <img src="./assets/images/locate1.jpeg" alt="">
+            </div>
             <div class="locationDetailContent">
               <h2 class="card-title fs-6 fs-md-4 fs-sm-4 lh-9 lh-md-6">台北中山旗艦店</h2>
               <div class="horizontalLineLight"></div>
@@ -63,7 +65,8 @@
             </div>
           </div>
         </div>
-        <img src="./assets/images/map.png" alt="地圖">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.465378238773!2d121.53571001432412!3d25.05221114371667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf93d4d97b%3A0xa1e26471ae5697b8!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1607788559424!5m2!1szh-TW!2stw" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <!-- <img src="./assets/images/map.png" alt="地圖"> -->
       </div>
     </div>
   </div>
@@ -97,17 +100,17 @@
           <li class="fas-item"><a href="#"><img class="fasImg" src="./assets/images/icon-line.svg" alt="LineIcon"></a></li>
         </ul>
       </div>
-      <div class="horizontalLine"></div>
+      <hr>
       <!-- copyright -->
       <div class="copyright d-flex justify-content-between align-items-center flex-sm-column">
         <div class="copyrightText d-flex align-items-center">
           <img class="copyrightLogo" src="./assets/images/logo.png" alt="商標logo圖片">
-          <span class="lh-6">Copyright © 2020 Glasses.All rights reserved.</span>
+          <p class="lh-6">Copyright © 2020 Glasses.All rights reserved.</p>
         </div>
-        <div class="terms">
-          <span class="policy mb-sm-2">隱私權政策</span>
-          <span class="service">服務條款</span>
-        </div>
+        <ul class="terms d-flex flex-sm-column">
+          <li class="policy mb-sm-2">隱私權政策</li>
+          <li class="service">服務條款</li>
+        </ul>
         <img class="bottomLogo" src="./assets/images/logo.png" alt="商標logo圖片">
       </div>
     </div>
