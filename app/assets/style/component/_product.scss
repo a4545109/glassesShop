@@ -1,0 +1,17 @@
+.product{
+  padding-top: 88px;
+  @include medium(){
+    padding-top: 40px;
+  }
+  @include pad(){
+    padding-top: 30px;
+  }
+  .product-title{
+    font-size: 42px;
+    line-height: 63px;
+  }
+  .product-img{
+    object-fit:cover;
+    width: 100%;
+  }
+}

@@ -41,5 +41,9 @@
   height: 31vw;
   @include medium(){
     width: 100%;
+    height: 35.2vw;
+  }
+  @include pad(){
+    height: 45.5vw;
   }
 }

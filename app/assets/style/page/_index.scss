@@ -97,10 +97,12 @@
     }
     .seriesItem{
       position: relative;    
-      color: #fff;
     }
     .seriesText{
       position: absolute;
+      a{
+        color: #fff;
+      }
     }
     .seriesWhiteIcon{
       display: block;
@@ -120,24 +122,25 @@
   background-image: url("../images/bg.png");
   .wallItem{
     line-height: 95px;
-    width: 50%;
+    width: 49%;
     position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #fff;
+      opacity: 50%;
+    }
     h2{
       z-index: 99;
       position: absolute;
+      a:hover{
+        color: rgb(163, 64, 64);
+      }
     }
-  }
-  .wallItem:nth-child(1){
-    margin-right: 30px;
-  }
-  .transparent{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #fff;
-    opacity: 50%;
   }
   @include medium(){
     padding: 40px 0 40px 0;
@@ -214,12 +217,17 @@
   }
   textarea{
     padding: 14px 0 100px 16px;
+    resize:none;
   }
   .send{
     padding: 16px 0;
     border: 0px;
     width: 48%;
-    margin: 0 auto;
+    cursor:pointer;
+  }
+  .form-control{
+    display: block;
+    width: 100%;
   }
   .agreeGroup{
     margin-bottom: 42px;
